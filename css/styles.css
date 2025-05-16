@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7; /* Light blue-grey background */
+    color: #333;
+}
+
+/* New styles for the layout */
+.site-header {
+    background-color: #f8f8f8; /* Light grey background */
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center; /* Center the navigation for now, will adjust with flex */
+}
+
+.site-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for navigation items */
+    justify-content: center; /* Center navigation items */
+}
+
+.site-header nav li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: #555; /* Dark grey color */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.site-header nav a:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+.main-content-wrapper {
+    display: flex; /* Enable Flexbox */
+    max-width: 1000px; /* Adjust max-width as needed */
+    margin: 20px auto; /* Center the wrapper */
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.sidebar {
+    flex: 0 0 250px; /* Fixed width sidebar */
+    margin-right: 30px; /* Space between sidebar and main content */
+    /* Add background, padding, border-radius, box-shadow if needed, similar to .container */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar img {
+    display: block; /* Make image a block element */
+    max-width: 100%; /* Ensure image is responsive within sidebar */
+    border-radius: 50%; /* Make image round */
+    margin: 0 auto 20px auto; /* Center image and add space below */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: none; /* Remove underline from sidebar name */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    padding-left: 0; /* Remove padding from existing li styles */
+    position: static; /* Remove absolute positioning from existing li styles */
+}
+
+.sidebar li::before {
+    content: none; /* Remove bullet points from existing li styles */
+}
+
+.sidebar a {
+    color: #555; /* Dark grey color for sidebar links */
+}
+
+
+.main-content {
+    flex-grow: 1; /* Allow main content to take up remaining space */
+    /* Add background, padding, border-radius, box-shadow if needed, similar to .container */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Adjust existing styles to fit the new layout */
+.container {
+    /* The .container might not be needed anymore or its styles need to be merged/adjusted */
+    /* For now, let's keep it but it might be removed later */
+    max-width: none; /* Remove max-width */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove shadow */
+    border-radius: 0; /* Remove border-radius */
+}
+
+h1 {
+    /* The main h1 might be replaced by the name in the sidebar */
+    /* For now, let's keep it but it might be removed later */
+    text-align: left; /* Align left in main content */
+    border-bottom: none; /* Remove underline */
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    /* This will likely be moved to the sidebar */
+    text-align: left; /* Align left in sidebar */
+    margin-bottom: 20px;
+}
+
+/* Adjust section styles for main content */
+.main-content section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee; /* Lighter separator */
+}
+
+.main-content section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.main-content h2 {
+    border-bottom: 2px solid #eee; /* Lighter underline */
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main-content .dated-subsection {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #eee; /* Lighter accent border */
+}
+
+.main-content .publications li, .main-content .skills li, .main-content section li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.main-content .publications li::before, .main-content .skills li::before, .main-content section li::before {
+    color: #555; /* Dark grey bullet */
+}
