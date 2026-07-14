@@ -1,61 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yabin Wang - Personal Homepage</title>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="王亚斌博士个人主页：最新动态、代表论文、开放代码与数据集。">
+    <title>王亚斌博士个人主页 · Yabin Wang</title>
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header class="site-header">
-        <nav>
-            <ul>
-                <li><a href="#">Yabin Wang</a></li> <!-- Site title/name -->
-                <li><a href="cv.html">CV/Bio</a></li>
-                <li><a href="publications.html">Publications</a></li>
-            </ul>
-        </nav>
-    </header>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <main class="site-stage" id="top">
+      <aside class="floating-ad" aria-label="飘动的学术合作公告">
+        <button class="floating-close" type="button" aria-label="关闭飘动公告">×</button>
+        <div class="floating-stars">★ ★ ★</div>
+        <span class="floating-icon" aria-hidden="true">🎓</span>
+        <strong>欢迎学术交流<br>与合作！</strong>
+        <span class="floating-english">OPEN TO RESEARCH DISCUSSIONS &amp; COLLABORATIONS</span>
+        <b class="floating-hot">HOT!</b>
+        <small>点击右上角可关闭</small>
+      </aside>
 
-    <div class="main-content-wrapper">
-        <div class="sidebar">
-            <!-- Placeholder for Profile Picture -->
-            <img src="placeholder.jpg" alt="Profile Picture"> <!-- Replace with actual image path -->
+      <div class="browser-shell">
+        <header class="hero">
+          <div class="hero-orbit orbit-left" aria-hidden="true"><span>🌍</span><span>🧬</span></div>
+          <div class="hero-copy">
+            <div class="hero-kicker">★★★ 天 道 酬 勤 · 求 实 创 新 ★★★</div>
+            <h1>王亚斌博士个人主页</h1>
+            <p>YABIN WANG'S PERSONAL ACADEMIC HOMEPAGE</p>
+          </div>
+          <div class="hero-orbit orbit-right" aria-hidden="true"><span>⚛️</span><span>📖</span></div>
+        </header>
 
-            <h2>Yabin Wang</h2> <!-- Original name -->
+        <div class="page-grid" id="home">
+          <aside class="left-column">
+            <section class="panel panel-blue">
+              <h2 class="panel-title"><span aria-hidden="true">👤</span><span>个人档案</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body">
+                <div class="portrait-frame">
+                  <img src="yabin-wang.jpg" alt="王亚斌个人照片">
+                  <span>YABIN WANG</span>
+                </div>
+                <dl class="profile-list">
+                  <div><dt>姓名：</dt><dd>王亚斌</dd></div>
+                  <div><dt>职称：</dt><dd>副研究员</dd></div>
+                  <div><dt>单位：</dt><dd>哈尔滨工业大学</dd></div>
+                  <div><dt>领域：</dt><dd>Computer Vision</dd></div>
+                </dl>
+              </div>
+            </section>
 
-            <!-- Original contact info and potentially other sidebar items -->
-            <div class="contact-info">
-                <ul>
-                    <li>✉️ <a href="mailto:wangyabin539@gmail.com">Email</a></li>
-                    <li>🐙 <a href="https://github.com/iamwangyabin">Github</a></li>
-                    <li>🔗 <a href="https://scholar.google.com/citations?user=DSMOnTIAAAAJ&hl=en">Google Scholar</a></li>
-                    <li>🔗 <a href="https://orcid.org/0000-0003-2931-572X">ORCID</a></li>
-                </ul>
+            <section class="panel panel-green">
+              <h2 class="panel-title"><span aria-hidden="true">⚡</span><span>快捷通道</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body">
+                <div class="retro-buttons">
+                  <a href="#about">👤 个人简介</a>
+                  <a href="#news">🔔 最新动态</a>
+                  <a href="#publications">📖 论文著作</a>
+                  <a href="#service">✅ 学术服务</a>
+                  <a href="https://scholar.google.com/citations?user=DSMOnTIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">📚 Scholar</a>
+                  <a href="https://github.com/iamwangyabin" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+                  <a href="https://orcid.org/0000-0003-2931-572X" target="_blank" rel="noopener noreferrer">🔗 ORCID</a>
+                  <a href="#downloads">💾 数据下载</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel panel-blue">
+              <h2 class="panel-title"><span aria-hidden="true">📊</span><span>站长统计</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body">
+                <div class="counter-label">您是第</div>
+                <div class="visitor-counter" aria-label="888888 位访问者"><span>8</span><span>8</span><span>8</span><span>8</span><span>8</span><span>8</span></div>
+                <div class="counter-label">位访问者</div>
+                <p class="tiny-note">本站自 2006-03-21 开始统计</p>
+              </div>
+            </section>
+          </aside>
+
+          <div class="center-column">
+            <div class="marquee" role="status">
+              <div class="marquee-track"><span>◆◆◆ 热烈欢迎访问我的个人主页！ ◆◆◆</span><span>欢迎各位专家、老师、同学批评指正！</span></div>
             </div>
-        </div>
 
-        <div class="main-content">
-            <!-- Add your About me content here -->
-            <section>
-                <h2>About me</h2>
-                <p>Research in Deep Learning and Computer Vision, focusing on <strong>Continual Learning</strong> and <strong>AI-generated Content Detection</strong>.</p>
-                <!-- <p>During my Ph.D. studies, I visited the <strong>University of Southampton, UK (QS World University Rankings 80) and Singapore Management University</strong>.</p> -->
-                <p>Published <strong>over ten papers</strong> in top international academic conferences and journals including CVPR, NeurIPS, AAAI, ACM TOMM. Google Scholar <strong>total citations exceed 500</strong>.</p>
-                <!-- <p>Representative work <strong>S-Prompts (NeurIPS 2022)</strong> achieved a key breakthrough in the field of continual learning <strong>(GitHub 100+ stars, single paper citations 260+)</strong>.</p> -->
+            <div class="center-split">
+              <section class="panel panel-blue about-panel">
+                <h2 class="panel-title"><span aria-hidden="true">📢</span><span>个人简介 / ABOUT ME</span><span aria-hidden="true">★</span></h2>
+                <div class="panel-body">
+                  <div id="about" class="about-copy">
+                    <p>王亚斌，博士，现任哈尔滨工业大学人工智能学院副研究员，主要从事 <mark>持续学习</mark>、<mark>AI 生成内容检测</mark> 与多模态学习研究。</p>
+                    <p>研究成果发表于 TPAMI、CVPR、NeurIPS、AAAI、Pattern Recognition 等国际期刊与会议，并持续开放相关代码与数据集。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="panel panel-red" id="news">
+                <h2 class="panel-title"><span aria-hidden="true">🔔</span><span>最新动态 / NEWS</span><span aria-hidden="true">★</span></h2>
+                <div class="panel-body">
+                  <ul class="news-list">
+                    <li><time>2026.06</time><a href="https://arxiv.org/abs/2606.03646" target="_blank" rel="noopener noreferrer">发布首个半监督多模态人群计数基准。</a><b>NEW!</b></li>
+                    <li><time>2026.06</time><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_Dance_Across_Shifts_Forward-Facilitation_Continual_Test-Time_Adaptation_through_Dynamic_Style_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer">Dance Across Shifts 发表于 CVPR 2026 主会。</a><b>NEW!</b></li>
+                    <li><time>2026.06</time><a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Peng_Leave_No_Stone_Unturned_Uncovering_Holistic_Audio-Visual_Intrinsic_Coherence_for_CVPRF_2026_paper.html" target="_blank" rel="noopener noreferrer">Leave No Stone Unturned 发表于 CVPR 2026 Findings。</a><b>NEW!</b></li>
+                    <li><time>2026.06</time><a href="https://openaccess.thecvf.com/CVPR2026_workshops/NTIRE" target="_blank" rel="noopener noreferrer">参与 NTIRE 2026 Robust Deepfake Detection Challenge。</a><b>NEW!</b></li>
+                    <li><time>2026</time><a href="https://github.com/iamwangyabin/PoundNet" target="_blank" rel="noopener noreferrer">PoundNet 发表于 IEEE TPAMI，代码与模型已公开。</a><span></span></li>
+                    <li><time>2026</time><a href="https://github.com/iamwangyabin/DFLIP-3K" target="_blank" rel="noopener noreferrer">DFLIP-3K 发表于 Pattern Recognition，数据集已开放。</a><span></span></li>
+                    <li><time>2026</time><a href="https://doi.org/10.1109/TMM.2026.3668531" target="_blank" rel="noopener noreferrer">CEAL 发表于 IEEE Transactions on Multimedia。</a><span></span></li>
+                    <li><time>2025.10</time><a href="https://www.yocsef.org.cn/YOCSEF/News/2026-04-10/850707.shtml" target="_blank" rel="noopener noreferrer">受邀在 CCF YOCSEF 大模型隐私论坛作引导发言。</a><span></span></li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <section class="panel panel-blue publications-panel" id="publications">
+              <h2 class="panel-title"><span aria-hidden="true">📖</span><span>论文著作 / SELECTED PUBLICATIONS</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body">
+                <ol class="publication-list">
+                  <li><div class="pub-number">2026</div><div class="pub-copy"><a href="https://doi.org/10.1109/TPAMI.2026.3664388" target="_blank" rel="noopener noreferrer">Penny-Wise and Pound-Foolish in AI-Generated Image Detection</a><sup>NEW!</sup><p>Yabin Wang, Zhiwu Huang, Zhou Su, Adam Prügel-Bennett, Xiaopeng Hong</p></div><span class="venue-badge">TPAMI</span></li>
+                  <li><div class="pub-number">2026</div><div class="pub-copy"><a href="https://doi.org/10.1016/j.patcog.2026.113395" target="_blank" rel="noopener noreferrer">Linguistic Profiling of Deepfakes: An Open Database for Next-Generation Deepfake Detection</a><sup>NEW!</sup><p>Yabin Wang, Xiaopeng Hong, Yaqi Li, Zhiheng Ma, Zhiwu Huang</p></div><span class="venue-badge">PR</span></li>
+                  <li><div class="pub-number">2026</div><div class="pub-copy"><a href="https://doi.org/10.1109/TMM.2026.3668531" target="_blank" rel="noopener noreferrer">Continual Conceptual Entity Learning for Text-to-Image Generative Models</a><sup>NEW!</sup><p>Yabin Wang, Xiaopeng Hong, Zhiheng Ma, Zhou Su, Jinpeng Zhang, Zhiwu Huang</p></div><span class="venue-badge">IEEE TMM</span></li>
+                  <li><div class="pub-number">2025</div><div class="pub-copy"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Wang_OpenSDI_Spotting_Diffusion-Generated_Images_in_the_Open_World_CVPR_2025_paper.html" target="_blank" rel="noopener noreferrer">OpenSDI: Spotting Diffusion-Generated Images in the Open World</a><sup>NEW!</sup><p>Yabin Wang, Zhiwu Huang, Xiaopeng Hong</p></div><span class="venue-badge">CVPR</span></li>
+                  <li><div class="pub-number">2023</div><div class="pub-copy"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/25329" target="_blank" rel="noopener noreferrer">Isolation and Impartial Aggregation: A Paradigm of Incremental Learning Without Interference</a><p>Yabin Wang, Zhiheng Ma, Zhiwu Huang, et al.</p></div><span class="venue-badge">AAAI</span></li>
+                  <li><div class="pub-number">2022</div><div class="pub-copy"><a href="https://papers.nips.cc/paper_files/paper/2022/hash/25886d7a7cf4e33fd44072a0cd81bf30-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">S-Prompts Learning with Pre-trained Transformers: An Occam's Razor for Domain Incremental Learning</a><p>Yabin Wang, Zhiwu Huang, Xiaopeng Hong</p></div><span class="venue-badge">NeurIPS</span></li>
+                </ol>
+                <a class="more-link" href="https://scholar.google.com/citations?user=DSMOnTIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar 完整列表 &gt;&gt;</a>
+              </div>
             </section>
 
-            <!-- Add your Recent News content here -->
-            <section>
-                <h2>Recent News</h2>
-                <!-- Add your Recent News content here -->
-                 <!-- <p>Sept., one paper about <a href="#">domain incremental learning</a> was accepted by NeurIPS 22.</p>
-                <p>August, one benchmark paper about <a href="#">deepfake incremental detection</a> was accepted by WACV 23.</p>
-                <p>July, one paper about agent based <a href="#">semi-supervised crowd counting</a> was accepted by ACM MM 22.</p> -->
+            <section class="panel panel-purple">
+              <h2 class="panel-title"><span aria-hidden="true">🎓</span><span>学术经历与访问照片 / ACADEMIC EXPERIENCE</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body">
+                <div class="activity-grid">
+                  <article><div class="activity-thumb">🏛️</div><b>2025–至今</b><span>Harbin Institute of Technology</span></article>
+                  <article><div class="activity-thumb">🎤</div><b>2023–2024</b><span>University of Southampton</span></article>
+                  <article><div class="activity-thumb">🏫</div><b>2023</b><span>Pengcheng Laboratory</span></article>
+                  <article><div class="activity-thumb">👥</div><b>2022–2023</b><span>Singapore Management University</span></article>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="right-column">
+            <section class="panel panel-blue" id="service">
+              <h2 class="panel-title"><span aria-hidden="true">✅</span><span>学术服务</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body"><h3>Journal Reviewer</h3><p class="service-copy">TCSVT · TMM · ACM TOMM · Neurocomputing · KBS</p><h3>Conference Reviewer</h3><p class="service-copy">CVPR · ICCV · NeurIPS · ICLR · AAAI · ACM MM</p></div>
             </section>
 
-            <!-- Note: Education, Visiting Experience, and Academic Service sections moved to CV/Bio page -->
+            <section class="panel panel-green" id="downloads">
+              <h2 class="panel-title"><span aria-hidden="true">💾</span><span>数据下载 / DATASETS</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body"><div class="download-list">
+                <a href="https://huggingface.co/datasets/nebula/DFLIP3K" target="_blank" rel="noopener noreferrer">📦 DFLIP-3K</a>
+                <a href="https://huggingface.co/datasets/nebula/OpenSDIDplus" target="_blank" rel="noopener noreferrer">🖼 OpenSDID+</a>
+                <a href="https://huggingface.co/datasets/nebula/OpenSDI_train" target="_blank" rel="noopener noreferrer">⬇ OpenSDI Train</a>
+                <a href="https://huggingface.co/datasets/nebula/OpenSDI_test" target="_blank" rel="noopener noreferrer">🔎 OpenSDI Test</a>
+              </div></div>
+            </section>
+
+            <section class="panel panel-blue">
+              <h2 class="panel-title"><span aria-hidden="true">📅</span><span>日历（2026年7月）</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body"><div class="retro-calendar" aria-label="2026年7月日历">
+                <div class="calendar-weekdays"><b>日</b><b>一</b><b>二</b><b>三</b><b>四</b><b>五</b><b>六</b></div>
+                <div class="calendar-days"><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span class="calendar-today">14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div>
+              </div></div>
+            </section>
+
+            <section class="panel panel-purple">
+              <h2 class="panel-title"><span aria-hidden="true">🤝</span><span>友情链接</span><span aria-hidden="true">★</span></h2>
+              <div class="panel-body"><ul class="friend-links">
+                <li><a href="https://www.hit.edu.cn/" target="_blank" rel="noopener noreferrer">哈尔滨工业大学</a></li>
+                <li><a href="https://github.com/iamwangyabin" target="_blank" rel="noopener noreferrer">个人 GitHub 主页</a></li>
+                <li><a href="https://scholar.google.com/citations?user=DSMOnTIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+                <li><a href="https://huggingface.co/nebula" target="_blank" rel="noopener noreferrer">Hugging Face</a></li>
+              </ul></div>
+            </section>
+          </aside>
         </div>
-    </div>
-</body>
+
+        <footer class="site-footer">
+          <div>最后更新：2026年7月14日</div>
+          <nav class="footer-links" aria-label="页脚导航"><a href="#top">网站首页</a> | <a href="#news">最新动态</a> | <a href="#publications">代表论文</a> | <a href="#downloads">数据下载</a></nav>
+          <div>建议使用 1024 × 768 分辨率浏览，效果更佳！</div>
+          <p>Copyright © 2006–2026 Yabin Wang　本站纯属个人学术交流使用</p>
+        </footer>
+      </div>
+    </main>
+  </body>
 </html>
