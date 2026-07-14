@@ -38,4 +38,53 @@
   };
 
   window.requestAnimationFrame(move);
+
+  const active = new Set();
+  const trailSymbols = ['★', '✦', '✧', '◆'];
+  let lastTrailAt = 0;
+  let trailIndex = 0;
+  let hue = 0;
+
+  const retire = (node) => {
+    active.add(node);
+    node.addEventListener('animationend', () => {
+      active.delete(node);
+      node.remove();
+    }, { once: true });
+  };
+
+  window.addEventListener('pointermove', (event) => {
+    if (event.pointerType === 'touch' || Date.now() - lastTrailAt < 45) return;
+    lastTrailAt = Date.now();
+    hue = (hue + 47) % 360;
+
+    const star = document.createElement('span');
+    star.className = 'cursor-star';
+    star.textContent = trailSymbols[trailIndex % trailSymbols.length];
+    trailIndex += 1;
+    star.style.left = `${event.clientX}px`;
+    star.style.top = `${event.clientY}px`;
+    star.style.setProperty('--trail-color', `hsl(${hue}, 95%, 58%)`);
+    document.body.appendChild(star);
+    retire(star);
+  }, { passive: true });
+
+  window.addEventListener('pointerdown', (event) => {
+    if (event.pointerType === 'touch') return;
+
+    for (let index = 0; index < 10; index += 1) {
+      const angle = (Math.PI * 2 * index) / 10;
+      const distance = 28 + (index % 3) * 9;
+      const spark = document.createElement('span');
+      spark.className = 'click-spark';
+      spark.textContent = index % 2 === 0 ? '✦' : '·';
+      spark.style.left = `${event.clientX}px`;
+      spark.style.top = `${event.clientY}px`;
+      spark.style.setProperty('--spark-x', `${Math.cos(angle) * distance}px`);
+      spark.style.setProperty('--spark-y', `${Math.sin(angle) * distance}px`);
+      spark.style.setProperty('--spark-color', `hsl(${(hue + index * 36) % 360}, 100%, 55%)`);
+      document.body.appendChild(spark);
+      retire(spark);
+    }
+  }, { passive: true });
 })();
