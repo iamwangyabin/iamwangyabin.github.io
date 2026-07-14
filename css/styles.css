@@ -60,21 +60,27 @@ button, input { font: inherit; }
   letter-spacing: 10px;
   text-shadow: 1px 1px #925600;
 }
-.hero::after {
-  content: "";
+.meteor-shower {
   position: absolute;
   z-index: 0;
-  left: -170px;
-  top: 27px;
-  width: 150px;
-  height: 3px;
+  inset: 0;
+  overflow: hidden;
   pointer-events: none;
+}
+.meteor {
+  position: absolute;
+  left: -190px;
+  height: 3px;
   opacity: 0;
   background: linear-gradient(90deg, transparent, #81ecff 55%, #fff 82%, #ffed45);
   box-shadow: 0 0 3px #5be4ff;
   transform: rotate(-8deg);
-  animation: comet 8s linear infinite;
+  animation: meteor-flight 4s linear infinite;
 }
+.meteor-one { top: 18px; width: 150px; animation-duration: 3.4s; animation-delay: -.5s; }
+.meteor-two { top: 43px; width: 110px; animation-duration: 4.1s; animation-delay: -2.6s; background: linear-gradient(90deg, transparent, #fff 70%, #ff8df0); }
+.meteor-three { top: 72px; width: 135px; animation-duration: 4.7s; animation-delay: -1.3s; background: linear-gradient(90deg, transparent, #8dffbb 55%, #fff 82%, #fff235); }
+.meteor-four { top: 101px; width: 90px; animation-duration: 5.2s; animation-delay: -4.4s; background: linear-gradient(90deg, transparent, #b9a8ff 60%, #fff); }
 .hero-copy { position: relative; z-index: 1; padding: 8px 0 22px; }
 .hero-kicker {
   color: #ffef3b;
@@ -283,11 +289,11 @@ mark { color: #d10000; font-weight: 900; background: #fff58a; }
 @keyframes blink { 50% { opacity: .1; } }
 @keyframes bob { to { transform: translateY(-7px) rotate(4deg); } }
 @keyframes pulse { to { transform: rotate(4deg) scale(1.07); } }
-@keyframes comet {
-  0%, 12% { opacity: 0; transform: translateX(0) translateY(10px) rotate(-8deg); }
-  16% { opacity: 1; }
-  46% { opacity: 0; transform: translateX(calc(100vw + 330px)) translateY(-38px) rotate(-8deg); }
-  100% { opacity: 0; transform: translateX(calc(100vw + 330px)) translateY(-38px) rotate(-8deg); }
+@keyframes meteor-flight {
+  0%, 4% { opacity: 0; transform: translateX(0) translateY(12px) rotate(-8deg); }
+  8% { opacity: 1; }
+  45% { opacity: 0; transform: translateX(calc(100vw + 380px)) translateY(-42px) rotate(-8deg); }
+  100% { opacity: 0; transform: translateX(calc(100vw + 380px)) translateY(-42px) rotate(-8deg); }
 }
 @keyframes cursor-trail {
   from { opacity: 1; transform: translate(-50%, -50%) rotate(0) scale(1); }
